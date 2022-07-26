@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tf_statement" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="27f73292-0680-4573-a25e-8001b974d68d">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="name" class="java.lang.String"/>
+	<field name="year" class="java.lang.Integer"/>
+	<field name="openingBalance" class="java.lang.Double"/>
+	<field name="interest" class="java.lang.Double"/>
+	<field name="closingBalance" class="java.lang.Double"/>
+	<field name="payments" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="60" splitType="Stretch">
+			<image>
+				<reportElement x="25" y="10" width="50" height="50" uuid="84dfc3df-4252-4385-b299-a68532d380e7"/>
+				<imageExpression><![CDATA["cpflogo.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="323" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="38" width="267" height="15" uuid="ef6f9467-a77c-4d9d-9d8f-747413a9d1ce">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[WELFARE FUND CLIENT STATEMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="60" width="100" height="15" uuid="798c3094-b12a-415f-a635-5c38da1efc36">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Transaction Details]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="60" width="100" height="15" uuid="922c5cb0-6690-4a93-89cf-dd6c4e6d7c99">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[End Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="38" width="100" height="15" uuid="45bddfee-5d07-4820-9b30-fb0f9a0cbbfa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Start Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="16" width="100" height="15" uuid="6ec5443e-936b-41c0-8d9b-1f4adc28c08a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Statement Date]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="7" y="89" width="537" height="21" uuid="9ea80010-de3a-422b-86ac-12a0639357c7"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="19" y="92" width="100" height="15" uuid="27c0e868-e4ae-4107-8145-c8c439223b7b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="92" width="201" height="15" uuid="30804ba5-efa0-45d9-82af-8f05987cdb40">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Transaction]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="92" width="100" height="15" uuid="8757ed80-00a1-4d36-a41a-f550e53891ac">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<line>
+				<reportElement x="7" y="208" width="537" height="1" uuid="54b020b1-992c-4d34-b3f6-f97ae8b7dfc9"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="119" y="114" width="167" height="15" uuid="e9149a3f-34df-45ae-9cf2-82e3a731cc10">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Opening Balance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="132" width="167" height="15" uuid="a92a662a-0d97-4534-ba28-a69c46acba8b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Income Distribution]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="151" width="167" height="15" uuid="d12f463a-5099-4c7a-94bf-3f73179d9ad0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Payments]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="171" width="167" height="15" uuid="80cb4791-8f84-4d6f-b7ca-a2b51d4c7dca">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Closing Balance]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="430" y="16" width="100" height="15" uuid="fc61b33c-8625-4ea7-9045-2aff1b92a910">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="16" width="267" height="15" uuid="8ef05e86-a03d-4d57-9195-42c2c5801345">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="38" width="100" height="15" uuid="9f199cde-cd3d-4290-a0d4-d6502fd65457">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="60" width="100" height="15" uuid="f448cb19-7011-486e-834f-da84599b9d74">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="170" width="124" height="15" uuid="bdca22d5-d8b7-48b0-8da4-9fa1bb213634">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new java.text.DecimalFormat("#,###.00").format($F{closingBalance})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="132" width="100" height="15" uuid="4100fac8-410b-4552-bd75-359f0fba2aa2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new java.text.DecimalFormat("#,###.00").format($F{interest})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="114" width="100" height="15" uuid="4e2209ef-5842-4573-9154-d7f45c343e2f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new java.text.DecimalFormat("#,###.00").format($F{openingBalance})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="114" width="100" height="15" uuid="8c1a1f43-71bb-4200-98df-8ea6a0d9ab69">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="439" y="151" width="100" height="15" uuid="f96be6e2-80f4-49a2-899f-a8d9a6f5ea40">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new java.text.DecimalFormat("#,###.00").format($F{payments})]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="newentrants" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5572fa74-f389-4bf4-b5f0-f732e1ba485b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="EvenOddRowStyle" mode="Opaque">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue() %2 == 0)]]></conditionExpression>
+			<style backcolor="#DFE5FF"/>
+		</conditionalStyle>
+	</style>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="memberNo" class="java.lang.String"/>
+	<field name="memberName" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<image>
+				<reportElement x="20" y="20" width="50" height="50" uuid="c4d58cf7-a2fc-4421-bbc9-b61ad433f4df"/>
+				<imageExpression><![CDATA["cpflogo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="227" y="47" width="100" height="30" uuid="f1fde77c-1b45-4d25-abed-3b3e258db0d7"/>
+				<textElement rotation="None">
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[New Entrants]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="78" splitType="Stretch">
+			<staticText>
+				<reportElement x="104" y="20" width="100" height="30" uuid="8e44f390-87c5-469c-87d2-6be727dc73f3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="26df9762-5b2a-43a3-9235-27ad9faa1c26"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Member No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="254" y="20" width="220" height="30" uuid="2cb8d874-b3c2-4312-b6af-fbacfebafd6e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ca6e9cd5-639d-4981-ab59-e05f20e82a7a"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Member Name]]></text>
+			</staticText>
+			<line>
+				<reportElement x="10" y="50" width="540" height="1" uuid="e81bce14-d1cc-4899-8f67-25c37b15e9b0"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="106" y="11" width="100" height="15" uuid="0df76b49-622b-4783-8fd1-6cc05eaf2c9b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="26df9762-5b2a-43a3-9235-27ad9faa1c26"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{memberNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="256" y="11" width="220" height="15" uuid="3cd2f4fe-7145-4e2d-ae07-e49b3f73837c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ca6e9cd5-639d-4981-ab59-e05f20e82a7a"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{memberName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

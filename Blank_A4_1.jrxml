@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9ce3fc40-15ad-4018-8931-a61888897024">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[aGVscGRlc2suaW5jaWRlbmNlcyAsMTUsMTUsNjA3NWI5ZWItMmE0Zi00ODdiLTk2NTktM2Q2Mzg2
+MzA3ODQ0Ow==]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="helpdesk"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM helpdesk.incidences]]>
+	</queryString>
+	<field name="IncidentReference" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="IncidentReference"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="incidences"/>
+	</field>
+	<field name="IncidentDescription" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="IncidentDescription"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="incidences"/>
+	</field>
+	<field name="IncidentStatus" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="IncidentStatus"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="incidences"/>
+	</field>
+	<field name="UserEmailAddress" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="UserEmailAddress"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="incidences"/>
+	</field>
+	<field name="Status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="incidences"/>
+	</field>
+	<group name="IncidentReference">
+		<groupExpression><![CDATA[$F{IncidentReference}]]></groupExpression>
+	</group>
+	<group name="IncidentDescription">
+		<groupExpression><![CDATA[$F{IncidentDescription}]]></groupExpression>
+	</group>
+	<group name="IncidentStatus">
+		<groupExpression><![CDATA[$F{IncidentStatus}]]></groupExpression>
+	</group>
+	<group name="UserEmailAddress">
+		<groupExpression><![CDATA[$F{UserEmailAddress}]]></groupExpression>
+	</group>
+	<group name="Status">
+		<groupExpression><![CDATA[$F{Status}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="30" uuid="be7898e9-d3d0-4a2a-adca-4a88426816f9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="856c315f-7f1b-4278-b73a-6d67844f77cb"/>
+				</reportElement>
+				<text><![CDATA[IncidentReference]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="30" uuid="cf1969f3-f24e-4b76-a3ca-ded6d9f17800">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bc3807a8-fe08-44e7-bddb-ffbf3cd21082"/>
+				</reportElement>
+				<text><![CDATA[IncidentDescription]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="30" uuid="e07d4650-a345-4ebf-ae30-23ca9cb18904">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dc26140a-47c3-449b-b57b-c78e12a94e60"/>
+				</reportElement>
+				<text><![CDATA[IncidentStatus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="30" uuid="4a91a2f1-09a2-424a-b38c-06411e240d45">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="360f0566-8914-4044-8cc0-58dfa52cea80"/>
+				</reportElement>
+				<text><![CDATA[UserEmailAddress]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="30" uuid="6c607c28-6e8a-4642-a431-c03be7c64a1c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="adf2b732-4928-4b6b-a984-e7c892e5d4de"/>
+				</reportElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="111" height="30" uuid="ae841a3c-3a51-4fd9-a518-c939b7fb16e2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="856c315f-7f1b-4278-b73a-6d67844f77cb"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{IncidentReference}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="111" height="30" uuid="082296cd-0986-4d08-9916-33fd6acbe0f2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bc3807a8-fe08-44e7-bddb-ffbf3cd21082"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{IncidentDescription}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="111" height="30" uuid="d5bbefb7-9b92-4691-ab3f-3ab7d9aa6d04">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dc26140a-47c3-449b-b57b-c78e12a94e60"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{IncidentStatus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="30" uuid="1dc25621-7942-4a28-bad8-64492a96fee8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="360f0566-8914-4044-8cc0-58dfa52cea80"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{UserEmailAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="30" uuid="25d5e63c-4c55-4c10-bbab-ef699ab01e2e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="adf2b732-4928-4b6b-a984-e7c892e5d4de"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

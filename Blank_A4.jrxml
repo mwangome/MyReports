@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="890" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f286b1d6-d9ce-4687-9b31-54c981a2b535">
+	<parameter name="idNumber" class="java.lang.String">
+		<defaultValueExpression><![CDATA["22354283"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="year" class="java.lang.String">
+		<defaultValueExpression><![CDATA["2020"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="theUrl" class="java.lang.String">
+		<property name="net.sf.jasperreports.http.data.url"/>
+		<defaultValueExpression><![CDATA["http://localhost:9090/ipp-json?idNumber=" + $P{idNumber} + "&year=" + $P{year}]]></defaultValueExpression>
+	</parameter>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="name" class="java.lang.String"/>
+	<field name="age" class="java.lang.String"/>
+	<field name="dob" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band splitType="Prevent">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="67">
+			<staticText>
+				<reportElement x="0" y="0" width="170" height="30" uuid="64f70117-cf51-4b3c-b3e9-4693f7d75c1a"/>
+				<text><![CDATA[Signed by the CEO: Hosea Kili]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="0" width="35" height="30" uuid="9d684b1f-d167-4c13-a9aa-3a89c8be62f6"/>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="37" width="554" height="30" uuid="42893634-ba1a-4fe2-803e-af2bc3db8be5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPF FINANCIAL SERVICES | 7th Floor |CPF House | Haile selasie | | P.O. Box 28938-00200 Nairobi, Kenya | Tel: 254 (20) 46901-5/720433354 |
+Email: info@cpf.or.ke]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="310" y="1" width="100" height="30" uuid="889ff912-1080-4e36-b64c-6efb1f0a5655"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band height="850" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement x="135" y="420" width="210" height="30" uuid="e26b223f-ccf1-41a0-a0d3-d666238b96a7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[EMPLOYEE PORTION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="345" y="420" width="210" height="30" uuid="a3434a8a-7dfa-4ebd-85de-8fad2a7e37a8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[EMPLOYER/GRATUITY PORTION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="450" width="135" height="30" uuid="222dbddb-d3fb-4e46-a980-f3ee89c33785"/>
+				<text><![CDATA[Opening Balance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="480" width="135" height="30" uuid="8e1b6c8d-e522-4890-9d20-95ff0e0926a1"/>
+				<text><![CDATA[Contributions]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="510" width="135" height="30" uuid="64905761-fce3-40d6-9555-a9fd7f1350fa"/>
+				<text><![CDATA[Transfer In]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="540" width="135" height="30" uuid="ea05dcb9-34b5-4806-b19e-e9f69ca1dc36"/>
+				<text><![CDATA[Interest]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="570" width="135" height="30" uuid="16c779fb-2205-4970-9c2a-b7568992ebae"/>
+				<text><![CDATA[Sub-Totals]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="600" width="135" height="30" uuid="346d464d-3c36-4edd-b24b-3d2d5695bb0b"/>
+				<text><![CDATA[Totals]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="630" width="135" height="30" uuid="cf94e00c-0277-4067-97cf-ffb1da161645"/>
+				<text><![CDATA[Consolidated]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="135" y="450" width="70" height="30" uuid="be8c0c96-7ad0-4fa3-8bae-d1bad9d18391">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="450" width="70" height="30" uuid="399f351c-462d-4199-82e8-f43a99cbdab0">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="450" width="70" height="30" uuid="9c251c27-0d96-4c9e-a056-27c26069fc30">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="450" width="70" height="30" uuid="0a1f8ff2-3bd3-4fc2-bdeb-49982e334fa3">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="450" width="70" height="30" uuid="f6fb98ad-8ede-4aeb-8c54-8e021bac2386">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="485" y="450" width="70" height="30" uuid="16f04098-1e00-4d72-9237-51fbd98ca343">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="480" width="70" height="30" uuid="e3f4d466-7cbb-4c23-9935-825f45c5c6a0">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="480" width="70" height="30" uuid="c6ea8b65-17d5-46c6-8e32-5d202f435eca">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="480" width="70" height="30" uuid="0f7b923c-8d12-4845-a94e-991b7caebe3a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="480" width="70" height="30" uuid="d7e8846f-09a9-46b8-9f65-34fe52a4f696">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="480" width="70" height="30" uuid="d6f34c8f-e6ef-455c-96ff-5804d9f835fa">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="485" y="480" width="70" height="30" uuid="71809f50-da59-4bc3-a0df-d3b8dfef4c1a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="510" width="70" height="30" uuid="fad32dcd-31a5-443f-97e3-87f3d67c8ce6">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="510" width="70" height="30" uuid="1123dce9-509a-4a0e-b86a-bb3488010caf">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="510" width="70" height="30" uuid="b14df359-281c-4042-9e7f-2806620c6c6e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="510" width="70" height="30" uuid="c8f109e7-a74c-4fc0-96b4-61f2af5b27b9">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="510" width="70" height="30" uuid="6b119369-f22e-4d5b-8ee0-a5590eb91211">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="485" y="510" width="70" height="30" uuid="2da009e5-e5e9-44ac-80f9-39ff836a988a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="540" width="70" height="30" uuid="91981585-fd5e-4a4f-bbb2-3a369e0b8845">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="540" width="70" height="30" uuid="6e36ba0d-4e71-4cd0-bb45-9fd9db4f3c65">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="540" width="70" height="30" uuid="19f5695c-d87a-4857-b63f-089b8bdbfadc">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="540" width="70" height="30" uuid="0d4678a9-5908-4883-9ecc-d29927122953">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="540" width="70" height="30" uuid="6f18b3f3-61bf-4102-ad12-8753371980d3">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="485" y="540" width="70" height="30" uuid="18995b3c-48c8-4310-a498-329a7c8e6665">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="570" width="70" height="30" uuid="7e588816-02e6-4e2a-a3dc-49642ca9ef26">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="570" width="70" height="30" uuid="fa11bab1-9a43-4aa2-9b92-3e38eb35e065">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="570" width="70" height="30" uuid="3ad481fa-bbc6-4b2b-9ed6-ba949090c06f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="570" width="70" height="30" uuid="bc397e26-b0fc-44a3-822d-806727e49bc2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="570" width="70" height="30" uuid="31c49465-68ef-4e40-a90b-d4ca08bafc3c">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="485" y="570" width="70" height="30" uuid="a785b099-00a2-4791-8092-84b594bb9e74">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="600" width="210" height="30" uuid="7e5de0f1-fa6a-469f-8797-1349ca02778f"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="600" width="210" height="30" uuid="9541a18e-a65f-4687-a976-243c38028e5d"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="630" width="420" height="30" uuid="359f1f71-39cb-4d8b-9acc-36710c4af7f1"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="660" width="555" height="30" uuid="ba9b0ca7-2a65-44aa-9d09-2a69fa258da8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[Monthly Contributions Credited to Your Account during the Financial Year ending 31 December 2019 are set out below
+(expressed in K Shs)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="690" width="42" height="30" uuid="4bd7036f-dc62-42c5-857c-85a7825e5b8b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Jan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="690" width="42" height="30" uuid="c9700dd5-59e4-44e3-9c58-67ef9e043c43">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Feb]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="134" y="690" width="42" height="30" uuid="f15117d6-994a-48d1-b5c0-8578552767ca">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Mar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="690" width="42" height="30" uuid="ebe7d09f-9567-4988-bdb4-e37d45ce7466">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Apr]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="218" y="690" width="42" height="30" uuid="f1194647-4615-4359-a46a-a4cf3b4028bc">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[May]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="690" width="42" height="30" uuid="c965c414-4fb7-444b-a297-e16c77679187">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Jun]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="302" y="690" width="42" height="30" uuid="2275a197-aacb-4a07-86ba-328c198e9c37">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Jul]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="690" width="42" height="30" uuid="a686e165-f8bf-4248-b7e6-5c72d9dab5c2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Aug]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="512" y="690" width="42" height="30" uuid="1398fb14-4097-4e18-924e-f2282d278132">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Dec]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="690" width="42" height="30" uuid="efb2b248-8f34-4b50-a93a-65b389da0888">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Nov]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="690" width="42" height="30" uuid="ea61c99f-3f88-48ce-b296-806a72906bd9">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Oct]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="386" y="690" width="42" height="30" uuid="87912534-33cc-4074-94b9-ef16ac61f4b9">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Sep]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="720" width="50" height="30" uuid="8b00563c-c741-4894-810d-62bc68f71fb8"/>
+				<text><![CDATA[EE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="750" width="50" height="30" uuid="678ebb7a-29d0-4034-871c-c9da4d1ee140"/>
+				<text><![CDATA[Gratuity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="780" width="50" height="30" uuid="e0111da7-3a6a-412e-b7e8-e5649ecdd138"/>
+				<text><![CDATA[Totals]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="387" width="100" height="30" uuid="36b315c6-3ff8-4e12-8d5b-82352c9ee7ac"/>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="357" width="100" height="30" uuid="817fc01f-2cf5-4e5d-a895-505b41ace501"/>
+				<text><![CDATA[Pensionable Service]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="327" width="100" height="30" uuid="fb6f7260-de9e-40b3-9269-ff9fb0db8d88"/>
+				<text><![CDATA[Join Scheme Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="297" width="100" height="30" uuid="28231d77-073e-41cb-9a60-8d7d5fe7650a"/>
+				<text><![CDATA[Employer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="267" width="100" height="30" uuid="e017c9fb-aa3c-4a20-812f-86a21208dc09"/>
+				<text><![CDATA[Static Text]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="237" width="100" height="30" uuid="c3f4810b-f61a-400c-abb9-4412c928209b"/>
+				<text><![CDATA[Normal Retirement Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="207" width="100" height="30" uuid="5c5bc517-0e9b-419f-b46c-d12de9f46139"/>
+				<text><![CDATA[Member No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="177" width="100" height="30" uuid="675cddd6-ed31-49ec-aa4c-0ce3b0aa22c3"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="176" width="100" height="30" uuid="b9625b66-10e6-47ca-bc39-cb365847ff34"/>
+				<text><![CDATA[National ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="206" width="100" height="30" uuid="ea89c028-7d53-4ff6-ba7b-666c618c496a"/>
+				<text><![CDATA[Date of Birth]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="236" width="100" height="30" uuid="8bb340c8-55f1-451f-afac-c5ff49c48fc1"/>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="266" width="100" height="30" uuid="69760157-26b9-47e8-960f-983a54cb5fcf"/>
+				<text><![CDATA[City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="296" width="100" height="30" uuid="f4c7bb2b-9f40-4639-9396-b2438573a567"/>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="326" width="100" height="30" uuid="868b2c24-bff9-455e-a678-b2293d6c984d"/>
+				<text><![CDATA[Phone No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="147" width="550" height="30" uuid="6cde9b5c-3e5b-4822-a86e-c69926048cb2"/>
+				<text><![CDATA[Please note that the following personal information are extracted from the Scheme records - if any information is inaccurate, please
+advice CPF Financial Services without delay]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="117" width="550" height="30" uuid="79b5c440-54ce-4140-bdef-424e5625896f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["ANNUAL MEMBER BENEFITS STATEMENT AS AT"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="87" width="550" height="30" uuid="b142731f-4650-4ec1-9e30-84687ade8129"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[CPF INDIVIDUAL PENSION PLAN]]></text>
+			</staticText>
+			<image hAlign="Center">
+				<reportElement x="195" y="1" width="180" height="80" uuid="94c2c01b-0315-4c66-a606-1caf587d2c13"/>
+				<imageExpression><![CDATA["cpflogo.png"]]></imageExpression>
+			</image>
+			<break>
+				<reportElement x="0" y="813" width="554" height="1" uuid="715ee772-0ffc-4607-ae51-01d1c79098ff"/>
+			</break>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="816" width="553" height="30" uuid="4081b3ef-00c8-46cc-abd6-862cb971f39f"/>
+				<textFieldExpression><![CDATA["Explanation of terms used:\n" +
+"Tax exempt contributions: The Kenya Revenue Authority gives a tax relief to a maximum of Ksh 20,000 per month on employee's and employer's\n" +
+"contributions towards a pension scheme\n" +
+"Non Tax Exempt: Any contributions above Ksh 20,000 per month shall be taxed prior to remitting to a pension scheme\n" +
+"This statement has been issued on behalf of the Trustees of the County Pension Fund by the Administrator CPF Financial Services Ltd. Any\n" +
+"discrepancies on the same should be channeled directly through the office of the CEO via the addresses below. The Chief Executive officer on behalf of\n" +
+"the Trustees hereby informs you that the interest declared on member contributions for year 2019 is 8.1\n" +
+"We would also like to inform you that owing to your membership in this scheme, you are insured and the following additional benefits accrue to you\n" +
+"other than the above:\n" +
+"1. Unemployment Benefit: Paid upon retrenchment- a sum equal to 3 Months member's contributory salary\n" +
+"2. Critical Illness Cover- Paid upon diagnosed with critical illness disease- a sum equal to 30% of 3 years member's contributory salary\n" +
+"3. Permanent & Total Disability Benefit- Paid upon declared permanently unable to discharge normal duties in employment- a sum equal to 3 years\n" +
+"member's contributory salary\n" +
+"4. Last Expense Benefit- Paid to beneficiaries upon member's death- Kenya Shillings 100,000\n" +
+"5. Group Life Benefit- Paid to beneficiaries upon member's death- a sum equal to 3 years member's contributory salary\n" +
+"It is also worth noting that the County Pension Fund through CPF Financial Services administers benefits for deceased members through a Trust Fund\n" +
+"where we hold and invest funds then pay school fees directly to various schools on behalf of the nominated beneficiaries."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="177" width="100" height="30" uuid="92a32144-5f21-444a-8b24-8b5bed97b69c"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="387" width="100" height="30" uuid="933a0dc8-7d1f-4b57-9c78-88275ae956ac"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="369" y="206" width="100" height="30" uuid="9c491352-9177-448e-b3f3-242f230c65ce"/>
+				<textFieldExpression><![CDATA[$F{dob}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

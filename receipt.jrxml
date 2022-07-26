@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="receipt" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3348274d-0ec8-471f-8276-e0611879d905">
+	<parameter name="receiptNo" class="java.lang.String"/>
+	<parameter name="receivedFom" class="java.lang.String"/>
+	<parameter name="amount" class="java.lang.String"/>
+	<parameter name="formattedAmount" class="java.lang.String"/>
+	<parameter name="details" class="java.lang.String"/>
+	<parameter name="transactionDate" class="java.lang.String"/>
+	<parameter name="issuedBy" class="java.lang.String"/>
+	<parameter name="amountInWords" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="182" splitType="Stretch">
+			<staticText>
+				<reportElement x="129" y="60" width="291" height="15" uuid="cfe2dd07-a992-4071-bc81-41519e42b49d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[P.O. BOX 28939-00200,]]></text>
+			</staticText>
+			<image>
+				<reportElement x="420" y="49" width="120" height="91" uuid="7c76eb42-9d1a-4e9c-ba3b-0c08a7049606"/>
+				<imageExpression><![CDATA["laptrust_logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="129" y="75" width="291" height="15" uuid="6749400c-f34b-40f2-a5d1-29bd3491ca32">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NAIROBI (KENYA)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="92" width="291" height="15" uuid="1db99a37-c459-4031-a67a-64627b23e532">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TEL:+254 020 222016, 248408, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="107" width="291" height="15" uuid="3c5aa488-9706-4ce1-a5c2-712c609a8cf9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[FAX:+254 020 251807]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="125" width="291" height="15" uuid="c0462fb4-7428-4bfd-8649-4ad90a4240b2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Web: www.laptrust.or.ke]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="140" width="291" height="15" uuid="54e88db4-95af-4fb9-a5a5-ad550bb6a22e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Email: info@laptrust.or.ke]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="52" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="11" width="550" height="30" uuid="e4bb1ad9-2a63-46c9-b887-17193ac6d38f"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Receipt]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<summary>
+		<band height="250" splitType="Stretch">
+			<staticText>
+				<reportElement x="26" y="5" width="100" height="30" uuid="7492909e-fd13-4fd8-bd09-38fe82c5d310"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Receipt No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="35" width="100" height="30" uuid="7a67f4f3-92f5-4a95-8806-f84ceb04be01"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Received From ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="65" width="100" height="30" uuid="bb9a7fea-0c27-4dd2-9562-743883935e65"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="95" width="100" height="30" uuid="d84ed74d-78f4-498b-af18-77e16186af54"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Being Paid of]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="126" width="100" height="30" uuid="f785ccdd-13ba-4586-9c2d-d2d8902ae814"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Transaction Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="157" width="100" height="30" uuid="6ed765d7-25fa-422e-a57f-53a21eebb93b"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Total Amount Paid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="187" width="100" height="30" uuid="b3ce3e48-ac9a-4f31-bc6a-05c3cba0d701"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Issued By]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="127" y="5" width="373" height="30" uuid="5256162f-50e2-401b-93d9-8d18428f2159"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{receiptNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="127" y="35" width="373" height="30" uuid="7d5f7f70-dc29-424f-a137-686738ecac43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{receivedFom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="127" y="95" width="373" height="30" uuid="a6657eaa-3670-4c4e-9279-341613d421ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{details}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="127" y="65" width="373" height="30" uuid="589612f3-8f5d-49ae-8d57-f9bf32931887"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{formattedAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="127" y="126" width="373" height="30" uuid="1aab00f8-4be8-4619-a48e-e647c18319fe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{transactionDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="127" y="156" width="373" height="30" uuid="d2a7d03a-6be6-42c6-bdde-d90570e69440"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{amountInWords}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="127" y="187" width="373" height="30" uuid="c1f5a7e6-b2bb-48e0-bf7b-83ef4f196fc0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{issuedBy}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="callfororder" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="be59de9c-04b9-4a78-aff0-3b007bd9b946">
+	<import value="org.apache.commons.codec.binary.Base64"/>
+	<parameter name="supplierName" class="java.lang.String"/>
+	<parameter name="currencyCode" class="java.lang.String"/>
+	<parameter name="subject" class="java.lang.String"/>
+	<parameter name="reviewerName" class="java.lang.String"/>
+	<parameter name="authorizerName" class="java.lang.String"/>
+	<parameter name="amount" class="java.lang.Double"/>
+	<parameter name="authorizerRole" class="java.lang.String"/>
+	<parameter name="reviewerRole" class="java.lang.String"/>
+	<parameter name="authorizerSignature" class="java.lang.String"/>
+	<parameter name="reviewerSignature" class="java.lang.String"/>
+	<parameter name="serialNumber" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<variable name="reviewerSignature" class="java.lang.String">
+		<variableExpression><![CDATA["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"]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="75" splitType="Stretch">
+			<image>
+				<reportElement x="52" y="6" width="50" height="27" uuid="4609cda9-9303-49ac-8112-21d17b245b83"/>
+				<imageExpression><![CDATA["nssf_logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="272" y="4" width="134" height="60" forecolor="#145FA7" uuid="b92866b2-36f5-4cd3-b95e-d91a83f85b02"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="9"/>
+				</textElement>
+				<text><![CDATA[National Social Security Fund
+14th Floor, Workers House
+Plot 1, Pilkington Road, PO Box 7140
+Kampala - Uganda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="4" width="140" height="60" forecolor="#145FA7" uuid="5732ff51-8bf1-4434-b0fa-161788d70c23"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="9"/>
+				</textElement>
+				<text><![CDATA[Tel:+256 313 331 755, +256 417 331 755
+Fax: +256 414 258 646
+E-mail: customerservice@nssfug.org
+website: www.nssfug.org]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageFooter>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="390" y="16" width="162" height="18" forecolor="#145FA7" uuid="6c7e53ab-f5b7-4cbe-bb14-c9bcfa31c160"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[a better life]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="442" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="4" width="100" height="15" uuid="ae53f58f-0d76-4115-942b-f40c475def2c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Call-Off Order
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="44" width="156" height="15" uuid="32a2d505-5d5b-4672-9091-606b8f35caee">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Procurement Reference No: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="77" width="156" height="15" uuid="60aab921-9b15-4393-8253-0f9f2f237904">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Procuring and Disposing Entity:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="92" width="156" height="15" uuid="d4fc8223-9684-4090-9ee4-3be6435ea089">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Provider:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="19" width="100" height="15" uuid="1964dcc5-0a5b-4897-9e14-0bf65a146295">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Under a Framework Contract]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="111" width="532" height="30" uuid="8f9dd41f-0db8-416b-8ca9-701961031673"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[The Procuring and Disposing Entity indicated above issues this call-off order under the framework contract referenced above. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="141" width="532" height="30" uuid="f40b1531-95f8-4fa3-aacb-9a0de91132b8"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<text><![CDATA[This call-off order is subject to the terms and conditions of the framework contract referenced above. In the event of a conflict, between this call-off order and the contract, the contract shall prevail. ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="11" y="171" width="532" height="15" uuid="fdd4930e-5dab-4fb2-a40d-edfff30279aa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement markup="html">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Please proceed with provision of <b>" + $P{subject} + "</b> as per price schedule and the specifications in the framework contract"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="11" y="188" width="532" height="30" uuid="b979cba8-b4e9-41d2-8d56-c20028428ed2"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["The total value of this call-off order is <b>" + $P{currencyCode} + " " + (new java.text.DecimalFormat("#,###.##").format($P{amount})) + " VAT Inclusive</b>."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="218" width="533" height="30" uuid="6ba7289c-399a-4ca5-ab0c-8c970a8520c1">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[Please confirm receipt of this call-off order and that you are proceeding with arranging the conference and residential facilities in accordance with the terms and conditions of the contract. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="248" width="533" height="30" uuid="f70b49a5-b7c8-4589-856f-ce3454b275f5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Reviewed by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="278" width="30" height="30" uuid="f96da93b-b066-4a8d-9f61-4fa7811bb242"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="278" width="110" height="30" uuid="8b07e7fd-1733-4bb4-833d-d6131d48478a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reviewerName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="193" y="278" width="40" height="30" uuid="3df3cdac-32b0-49fb-bfce-10f547fbf837"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Position: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="233" y="278" width="150" height="30" uuid="a613f7a1-363b-4be1-9fde-c7b14d640cb3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reviewerRole}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="278" width="50" height="30" uuid="c37c0431-bb47-4950-882e-3b8bd5e6e424"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="342" width="100" height="30" uuid="013ed7f2-0de3-403a-87a2-4e6328512d8d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph leftIndent="20"/>
+				</textElement>
+				<text><![CDATA[Signature:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="371" width="100" height="30" uuid="792bf900-3243-4e60-bac5-0b5cbb656797">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph leftIndent="20"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="402" width="100" height="30" uuid="bc29c26d-a9ea-43a1-96de-0c5aac19528a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph leftIndent="20"/>
+				</textElement>
+				<text><![CDATA[Position:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="111" y="371" width="433" height="30" uuid="72fccab3-e559-4611-9eaf-65a893e0ab8c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+					<paragraph leftIndent="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{authorizerName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="402" width="433" height="30" uuid="b500448f-89e1-4c05-aafe-077af5822cfb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+					<paragraph leftIndent="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{authorizerRole}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="92" width="359" height="15" uuid="4f081ab1-9261-42e1-a4f3-243b72f3efae">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{supplierName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="77" width="359" height="15" uuid="058ab33a-b175-4bf6-839f-605b42b386bd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["National Social Security Fund."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="44" width="201" height="15" uuid="ed598634-9263-4f6e-a56e-61358a9fa700">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["NSSF/NCONS/" + new java.text.SimpleDateFormat("YYYY").format(new java.util.Date()) + "/" +  $P{serialNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="60" width="156" height="15" uuid="c581642f-7e6e-48db-80f1-8b1f7dc807e5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Call-Off Order Reference No:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="166" y="60" width="201" height="15" uuid="a80c19b0-e057-4293-b6e3-333f243ca6eb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{serialNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="111" y="342" width="433" height="30" uuid="5243eeaa-3f4c-453a-b641-140c6b857c37"/>
+				<box topPadding="0">
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="309" width="533" height="30" uuid="9ac3cb86-0b0e-427e-9ed4-19b17e80120b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Authorized by:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

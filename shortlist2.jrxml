@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_Landscape" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a5e6478b-e03c-485a-9ef1-606165f92a12">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<style name="Zebra" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 1]]></conditionExpression>
+			<style backcolor="#0077BE"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="json">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="firstName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="firstName"/>
+		<fieldDescription><![CDATA[firstName]]></fieldDescription>
+	</field>
+	<field name="lastName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="lastName"/>
+		<fieldDescription><![CDATA[lastName]]></fieldDescription>
+	</field>
+	<field name="phone" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="phone"/>
+		<fieldDescription><![CDATA[phone]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="id"/>
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="email"/>
+		<fieldDescription><![CDATA[email]]></fieldDescription>
+	</field>
+	<field name="education" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="education"/>
+		<fieldDescription><![CDATA[education]]></fieldDescription>
+	</field>
+	<field name="age" class="java.lang.String"/>
+	<field name="company" class="java.lang.String"/>
+	<field name="position" class="java.lang.String"/>
+	<field name="certificate" class="java.lang.String"/>
+	<field name="affiliation" class="java.lang.String"/>
+	<field name="history" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="128" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="88" width="490" height="30" uuid="81b73db1-9725-454a-be13-3e6937e63e29"/>
+				<textElement verticalAlignment="Middle">
+					<font size="19" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Shortlisted Applicants]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="630" y="89" width="169" height="30" uuid="a9ca0503-37c9-48c3-8374-17584ed7d827"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="20" width="210" height="50" uuid="1d9482fa-a15e-4ad2-8558-6fa0e5057982"/>
+				<imageExpression><![CDATA["eRecruit.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="32">
+			<textField>
+				<reportElement style="Zebra" x="0" y="0" width="76" height="30" uuid="deb5348d-d580-4698-934f-6fd4ecfd2cf0"/>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Zebra" x="76" y="0" width="66" height="30" uuid="309752b5-d56e-481c-9d79-fc0d40dc75dd"/>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Zebra" x="142" y="0" width="66" height="30" uuid="f806b9a7-2f3e-49b3-bf07-41cb9a770eda"/>
+				<textFieldExpression><![CDATA[$F{phone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Zebra" x="208" y="0" width="66" height="30" uuid="476a30e1-3e46-46ed-bc91-f9d9dd173f29"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Zebra" x="274" y="0" width="66" height="30" uuid="d174b78b-de3c-473c-bb98-a7591d3211f2"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Zebra" x="340" y="0" width="66" height="30" uuid="b3b4acfc-e7d6-45dc-8a46-c6114ab00810"/>
+				<textFieldExpression><![CDATA[$F{education}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Zebra" x="406" y="0" width="66" height="30" uuid="0c57aba2-b2c5-4dfb-a50c-095f63bc676e"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Zebra" x="472" y="0" width="66" height="30" uuid="af52ed30-4bde-409a-a63e-9d6766a8e63b"/>
+				<textFieldExpression><![CDATA[$F{company}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Zebra" x="538" y="0" width="66" height="30" uuid="cb0ca017-144a-4c6c-ad7d-944a9519d597"/>
+				<textFieldExpression><![CDATA[$F{position}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Zebra" x="604" y="0" width="66" height="30" uuid="6d970cc3-a15b-44d5-9ff7-14d78ea908da"/>
+				<textFieldExpression><![CDATA[$F{certificate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Zebra" x="670" y="0" width="66" height="30" uuid="1e9f0ff0-574c-4a0b-accf-4f833c2ae71c"/>
+				<textFieldExpression><![CDATA[$F{affiliation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Zebra" x="736" y="0" width="66" height="30" uuid="77cd4baa-60dc-4ec4-a850-25c3f53e65bc"/>
+				<textFieldExpression><![CDATA[$F{history}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="237" splitType="Stretch"/>
+	</summary>
+</jasperReport>

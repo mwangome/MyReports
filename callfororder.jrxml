@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="callfororder" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="be59de9c-04b9-4a78-aff0-3b007bd9b946">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="75" splitType="Stretch">
+			<image>
+				<reportElement x="52" y="33" width="50" height="27" uuid="4609cda9-9303-49ac-8112-21d17b245b83"/>
+				<imageExpression><![CDATA["nssf_logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="258" y="4" width="150" height="60" forecolor="#145FA7" uuid="b92866b2-36f5-4cd3-b95e-d91a83f85b02"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="9"/>
+				</textElement>
+				<text><![CDATA[National Social Security Fund
+14th Floor, Workers House
+Plot 1, Pilkington Road, PO Box 7140
+Kampala - Uganda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="4" width="140" height="60" forecolor="#145FA7" uuid="5732ff51-8bf1-4434-b0fa-161788d70c23"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="9"/>
+				</textElement>
+				<text><![CDATA[Tel:+256 313 331 755, +256 417 331 755
+Fax: +256 414 258 646
+E-mail: customerservice@nssfug.org
+website: www.nssfug.org]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageFooter>
+		<band height="29" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="442" splitType="Stretch">
+			<rectangle>
+				<reportElement x="10" y="331" width="530" height="30" uuid="264b9518-c004-41fb-aaa8-a65c01566cfd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="14" width="100" height="15" uuid="ae53f58f-0d76-4115-942b-f40c475def2c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[Call-Off Order
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="44" width="126" height="15" uuid="32a2d505-5d5b-4672-9091-606b8f35caee">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[Procurement Reference No: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="59" width="152" height="15" uuid="60aab921-9b15-4393-8253-0f9f2f237904">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[Procuring and Disposing Entity:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="74" width="100" height="15" uuid="d4fc8223-9684-4090-9ee4-3be6435ea089">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[Provider:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="29" width="100" height="15" uuid="1964dcc5-0a5b-4897-9e14-0bf65a146295">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[Under a Framework Contract]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="98" width="532" height="30" uuid="8f9dd41f-0db8-416b-8ca9-701961031673"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[The Procuring and Disposing Entity indicated above issues this call-off order under the framework contract referenced above. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="128" width="532" height="30" uuid="f40b1531-95f8-4fa3-aacb-9a0de91132b8"/>
+				<text><![CDATA[This call-off order is subject to the terms and conditions of the framework contract referenced above. In the event of a conflict, between this call-off order and the contract, the contract shall prevail. ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="11" y="158" width="532" height="30" uuid="fdd4930e-5dab-4fb2-a40d-edfff30279aa"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Please proceed with provision of ……………………………………[subject of procurement] as per price schedule and the specifications in the framework contract"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="11" y="188" width="532" height="30" uuid="b979cba8-b4e9-41d2-8d56-c20028428ed2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["The total value of this call-off order is UGX [provide for multi-currency] …………………….. VAT Inclusive."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="218" width="533" height="30" uuid="6ba7289c-399a-4ca5-ab0c-8c970a8520c1">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[Please confirm receipt of this call-off order and that you are proceeding with arranging the conference and residential facilities in accordance with the terms and conditions of the contract. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="248" width="533" height="30" uuid="f70b49a5-b7c8-4589-856f-ce3454b275f5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Reviewed by:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="278" width="30" height="30" uuid="f96da93b-b066-4a8d-9f61-4fa7811bb242"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Name: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="278" width="110" height="30" uuid="8b07e7fd-1733-4bb4-833d-d6131d48478a"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Name"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="150" y="278" width="40" height="30" uuid="3df3cdac-32b0-49fb-bfce-10f547fbf837"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Position: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="278" width="200" height="30" uuid="a613f7a1-363b-4be1-9fde-c7b14d640cb3"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Position"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="278" width="50" height="30" uuid="c37c0431-bb47-4950-882e-3b8bd5e6e424"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Signature: ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="361" width="530" height="30" uuid="ab7bf45f-4305-42b0-9a75-d9b369f6b7a2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="391" width="530" height="30" uuid="db476528-a152-4445-894f-4f7c22ba37bc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<line>
+				<reportElement x="114" y="331" width="1" height="90" uuid="9f65af80-b3f0-4d00-8835-20923ab44354"/>
+			</line>
+			<staticText>
+				<reportElement x="31" y="339" width="60" height="15" uuid="013ed7f2-0de3-403a-87a2-4e6328512d8d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Signature:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="368" width="60" height="15" uuid="792bf900-3243-4e60-bac5-0b5cbb656797">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="399" width="60" height="15" uuid="bc29c26d-a9ea-43a1-96de-0c5aac19528a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Position:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

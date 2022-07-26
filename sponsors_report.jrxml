@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sponsors_report" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="87dd2788-3796-438e-a14f-045e45803aa9">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="sponsor_id" class="java.lang.String">
+		<defaultValueExpression><![CDATA["DCS001"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="balance" class="java.lang.String"/>
+	<field name="payouts" class="java.lang.String"/>
+	<field name="opening" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="95" splitType="Stretch">
+			<image>
+				<reportElement x="30" y="21" width="50" height="50" uuid="d6d33dcf-aa65-418c-aea4-1a100bb10625"/>
+				<imageExpression><![CDATA["logo-benevolent.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="343" y="50" width="100" height="30" uuid="b2992a31-2f5e-4039-8419-e34559a84cbb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPF TRUST FUND]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="94" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="31" width="240" height="15" uuid="922f0c20-35ba-4fb2-9434-4155f8b08793">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WELFARE FUND SPONSOR CLIENT STATEMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="550" y="15" width="100" height="15" uuid="51dd78ad-d96f-4e73-a3de-882352c46be3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<text><![CDATA[Statement Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="550" y="30" width="100" height="15" uuid="9c41244a-a306-4cf3-8ea9-28f5e6563a1e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<text><![CDATA[Start Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="550" y="45" width="100" height="15" uuid="304a5027-b0da-4486-9e05-b559bce65689">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<text><![CDATA[End Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="64" width="240" height="15" uuid="2eab15b4-ee82-44aa-b7c8-1963308c9181">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<text><![CDATA[TRANSACTION DETAILS]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="49" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="11" width="80" height="15" uuid="5b005dd5-e602-4aa8-bf77-de925c165e1b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="11" width="133" height="15" uuid="c95ea426-6dc4-4f83-9a0f-76bb038abd9c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Transaction]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="11" width="147" height="15" uuid="9fece0c9-712e-466a-baec-6b5487b02065">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="506" y="11" width="147" height="15" uuid="84e538e2-1a40-41e2-b950-6603541babf3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="654" y="11" width="147" height="15" uuid="9b0f6735-efae-4aef-91bf-20245aa2d351">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Transactions]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="800" height="1" uuid="6b2e2814-4f42-4692-8a0a-4de2d03b5f51"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1" y="38" width="800" height="1" uuid="799ba3e2-476d-4df2-9de1-2bfc8960b5e2"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="11" width="799" height="30" forecolor="#808080" uuid="56e22197-db03-4407-87d5-9ce49d1a88b6"/>
+				<textElement>
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<text><![CDATA[Disclaimer 
+Past performance is not necessarily a guide to future performance. Prices and yields shown on this report are net of applicable charges and taxes (the same disclaimer as that for summary trading report
+]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="194" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="0" width="130" height="15" uuid="ef660e43-a81c-41b8-b2f9-e4ce54e0eb4a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<text><![CDATA[Opening Balance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="15" width="131" height="15" uuid="07f7d87e-bd81-498d-883d-9a8375174312">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<text><![CDATA[Income Distribution (interest)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="30" width="131" height="15" uuid="8c68fcdf-2ac3-4e3f-b2c6-f94b8533d8bc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<text><![CDATA[Payments]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="45" width="131" height="15" uuid="71e132c0-5f4a-42dc-a28b-1dd81f12d678">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<text><![CDATA[Closing Balance]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="356" y="0" width="147" height="15" uuid="a9670e8f-45d8-4f0f-b602-c31bad56df6b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="506" y="0" width="147" height="15" uuid="77c612ec-0825-4cd6-b8f7-d6faa51f65a3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="653" y="0" width="147" height="15" uuid="7c1862b9-f0be-4e61-b145-ff108bd90639">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{opening}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="15" width="147" height="15" uuid="1c0f0c05-5f52-4aa2-bff2-b315d65b1814">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="506" y="15" width="147" height="15" uuid="000f84ab-d1b4-4ff0-88e2-58c28e33d349">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="653" y="15" width="147" height="15" uuid="2d237241-c3d5-48a0-be9c-ff4fafb5cb81">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="506" y="46" width="147" height="15" uuid="ffd60522-1397-4883-88db-4519745503a9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="31" width="147" height="15" uuid="d4041f20-4aad-4ff6-80b6-0eeb7508f9ab">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="653" y="31" width="147" height="15" uuid="3cf7c01e-c287-437e-ad7a-37c707ec0e31">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{payouts}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="46" width="147" height="15" uuid="bf10be25-e651-40f1-9ab0-dee274651d32">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="506" y="31" width="147" height="15" uuid="aabf66ce-b200-402d-8579-260dc5eae561">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="653" y="46" width="147" height="15" uuid="743e6d4e-bb2b-4ab2-829e-79d9183c5ab3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{balance}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="1" y="98" width="800" height="1" uuid="55cade7a-5ba9-4d51-b758-cc27cd37b52e"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2" y="138" width="800" height="1" uuid="e01d481c-72a1-49d8-a18e-728d7fb9fc01"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="81" width="199" height="15" uuid="9d8db2f4-8ad4-48e9-96c5-e9ee9192d8ff">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<text><![CDATA[DISTRIBUTION DETAILS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="4" y="162" width="800" height="1" uuid="8c52e1a2-da5d-4c85-b762-afd887af7b90"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="18" y="112" width="118" height="15" uuid="3a428a37-b54d-4aab-bf45-7452817781a3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Distribution Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="139" y="112" width="118" height="15" uuid="05594cdd-b313-4292-8b5a-9f486f496bd5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gross Distribution]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="112" width="118" height="15" uuid="1435cb1b-b21f-4774-9d42-e6b088a02c6c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Taxes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="515" y="112" width="118" height="15" uuid="ccc6fda7-4c70-40c9-811f-1859b4663aa5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payouts]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="638" y="112" width="118" height="15" uuid="52f8eb4c-b649-4d37-b332-386496adca31">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Net Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="112" width="118" height="15" uuid="22c675a4-9155-498f-a4c5-56399807f6a9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reinvestment]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="66" width="800" height="1" uuid="1ef27b51-c98f-4afe-b70d-41926ee524b4"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="18" y="143" width="118" height="15" uuid="962811eb-1a76-4bb7-a9e6-9156cb14dd6f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="143" width="118" height="15" uuid="476bed00-9f51-4258-a53e-042dfd29c490">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="262" y="143" width="118" height="15" uuid="3e991393-985c-4bd0-8e5a-c6179f23243c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="392" y="143" width="118" height="15" uuid="84837d23-10e3-4b87-aeda-ef9e90bea518">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="639" y="143" width="118" height="15" uuid="4c8b4980-062e-4d79-bcda-9d670fe8d4d6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="515" y="143" width="118" height="15" uuid="a0c2db05-2f64-4742-87aa-e7a5f0cb3fe8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SegoeUI"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0.00"]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

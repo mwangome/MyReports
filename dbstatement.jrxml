@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dbstatement" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f9eed809-42ce-469f-abdb-2ec382dc17cb">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="age" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="memberNo" class="java.lang.String"/>
+	<field name="pensionableSalary" class="java.lang.String"/>
+	<field name="service" class="java.lang.String"/>
+	<field name="taxFreeAmount" class="java.lang.String"/>
+	<field name="monthlyPension" class="java.lang.String"/>
+	<field name="dateCalculation" class="java.lang.String"/>
+	<field name="commutatedVoluntary" class="java.lang.String"/>
+	<field name="lumpsumAmount" class="java.lang.String"/>
+	<field name="commutatedAmount" class="java.lang.String"/>
+	<field name="voluntary" class="java.lang.String"/>
+	<field name="pension" class="java.lang.String"/>
+	<field name="idNumber" class="java.lang.String"/>
+	<field name="dateAppointment" class="java.lang.String"/>
+	<field name="dateJoinedScheme" class="java.lang.String"/>
+	<field name="breakInService" class="java.lang.String"/>
+	<field name="withholdingTax" class="java.lang.String"/>
+	<field name="lumpsumPayable" class="java.lang.String"/>
+	<field name="taxableAmount" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="40" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="1" y="0" width="553" height="40" forecolor="#96A6B3" uuid="4cf07000-647c-4193-82fa-0b6d5b82ae12"/>
+				<textElement>
+					<font fontName="Gill Sans MT" isItalic="true"/>
+				</textElement>
+				<text><![CDATA["Kindly note that this benefits quotation does not guarantee payment of the exact benefits provided , verify eligibility nor ascertain the exact amount payable. Payment of benefits are subject to the provisions of the scheme Trust Deed and Rules, prevailing applicable regulations and economic conditions  at the time of payment of benefits ."]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="550" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="240" y="0" width="50" height="50" uuid="0b159fb3-fdde-42bd-8ed8-e786c74cd03f"/>
+				<imageExpression><![CDATA["laptrust_logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="51" width="550" height="15" uuid="8b38e974-59d5-44c4-9be5-1ac57ce7cbb1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Benefits Quote]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="67" width="280" height="15" uuid="233272bf-cd30-480b-9b56-7cf067c5dfe3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PART A: MEMBER DETAILS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="99" width="49" height="15" uuid="63fdb644-a0ed-4eaf-9f73-1f717f4a0423">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Member:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="114" width="280" height="15" uuid="3a4ba238-6242-4361-8730-76d1bb3ab0f4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Number]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="50" y="99" width="231" height="15" uuid="e25f36f1-2ec3-47e4-bb96-a148f328b424">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{memberNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="114" width="269" height="15" uuid="9b057789-122e-4ddd-b05a-d374e89c890f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{idNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="144" width="280" height="15" uuid="2c4024d8-8e5f-4568-8cf2-7123cc591ea4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of Joining Scheme]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="281" y="129" width="269" height="15" uuid="73f73c2c-6e1d-404e-b464-ece501cdb088">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{dateAppointment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="144" width="269" height="15" uuid="e8b4483b-5849-4d5a-b260-edccc101991f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{dateJoinedScheme}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="129" width="280" height="15" uuid="df51ac9b-9b73-4fbd-9430-6f22adc3c9cd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of Joining Employment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="174" width="280" height="15" uuid="00fc145b-cf67-44f4-b4fc-75301ef0d52c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age as at today]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="204" width="280" height="15" uuid="212b68a6-5bb5-465f-a61a-97b3a3a10a67">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Break In service]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="281" y="159" width="269" height="15" uuid="59053dcd-cf38-4433-b63a-89441d265917">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{dateCalculation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="204" width="269" height="15" uuid="add57df3-8c55-4cc4-adf4-024a36ba878a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{breakInService}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="174" width="269" height="15" uuid="386990a5-f0c0-46dc-874d-fa2e7d55c42b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="189" width="269" height="15" uuid="a2c9d649-8790-4d3b-b265-8139bdd44604">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{service}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="159" width="280" height="15" uuid="f2786898-c97b-44d8-8618-5e294aa4942d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of Running Statement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="189" width="280" height="15" uuid="27e41105-a4f2-46a9-9c0f-7326d5b2fb2c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pensionable Service]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="219" width="280" height="15" uuid="f17c46d9-b2c1-4923-9cc0-39959b1643db">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pensionable Salary]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="281" y="219" width="269" height="15" uuid="9ff32271-78a9-442b-b01e-11ed17420dce">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{pensionableSalary}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="289" width="280" height="15" uuid="9178312a-df74-4b36-8daa-3e6b37a5cf7c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Commuted  Gross Lumpsum]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="242" width="280" height="15" uuid="0d6eebe2-d121-4bae-8360-1d2d18c7eb96">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PART B:PENSION CALCULATION]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="281" y="334" width="269" height="15" uuid="3f4ff772-1294-42c6-8104-26342e9d7aee">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{monthlyPension}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="364" width="269" height="15" uuid="aa32c53f-56b5-4ca6-9b98-ae094b069885">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{service}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="364" width="280" height="15" uuid="54dda51f-07d4-452b-8ce4-bdf11950bfea">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pensionable Service]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="319" width="280" height="15" uuid="df1af756-a77d-4d18-ad41-c955aa234859">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Lumspum]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="334" width="280" height="15" uuid="3663c968-8e2c-4d8b-9e66-0ab471825406">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Monthly Pension]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="281" y="274" width="269" height="15" uuid="d5d05e51-c7a5-4868-ac87-9bbd543f470e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{pension}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="349" width="280" height="15" uuid="9402e598-b6bf-4138-99df-47d1dc592eb5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age as at today]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="281" y="319" width="269" height="15" uuid="4fc6ec7d-f5db-469f-a80e-a58826fece53">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{lumpsumAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="289" width="269" height="15" uuid="86893aa2-0f66-40d1-9dd7-cb0ce02d483b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{commutatedVoluntary}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="304" width="269" height="15" uuid="93f0e8b3-1ac5-4add-9bb4-e5ea4ad1fe76">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{voluntary}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="274" width="280" height="15" uuid="bc0b794b-48f0-42ac-9568-be16160b875e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Accrued Annual Pension]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="281" y="349" width="269" height="15" uuid="d852cd49-b942-4475-a2b6-66486cda0abe">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="304" width="280" height="15" uuid="f1f8c51f-66cb-42ec-b707-9268d5171988">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Additional Voluntary Contributions]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="449" width="269" height="15" uuid="281a1bb2-4247-4367-a90c-2fcfffae1149">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{taxableAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="434" width="269" height="15" uuid="4e73eb37-4790-4fb0-95f7-a81a170c65a2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{taxFreeAmount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="449" width="280" height="15" uuid="e155a4ec-69fc-4406-828c-34b7f7d68de3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Taxable Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="464" width="280" height="15" uuid="bdf09bc3-a214-42f5-b41d-7b531a83b0a0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Witholding Tax]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="434" width="280" height="15" uuid="d7e7645b-db38-460a-b231-008f825b888e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tax Free Lumpsum]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="464" width="269" height="15" uuid="9a069b4f-05fc-4707-9bbb-17f702cc0c8a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{withholdingTax}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="419" width="280" height="15" uuid="6a9f6d09-e2d3-4584-838c-13af3403e0f7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Commuted Lumpsum + AVC  Contributions]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="387" width="280" height="15" uuid="dd42a753-2da6-4ec9-b20d-3a5095c10058">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PART C:TAX ON LUMPSUM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="479" width="280" height="15" uuid="412d9b85-77c0-466a-8c6f-f31e5263f51f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lumpsum Payable]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="419" width="269" height="15" uuid="412cb55a-7589-4379-b26b-87df8005c057">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{lumpsumAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="479" width="269" height="15" uuid="5c1672b6-7305-4f0b-a8f0-03863b9787f7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{lumpsumPayable}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="1" y="520" width="553" height="30" uuid="14f68d11-39f3-43a1-a892-1501bbf03ae7"/>
+				<textElement markup="html">
+					<font fontName="Gill Sans MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Your contributions statement is also available for verification. This statement is issued with the assumption of a minimum early retirement age of 50 Yrs. . A refund of contribution plus interest shall be computed at exit in case you leave service prior to age 50<br>" +
+"Income Tax Act gives a tax relief on actual contributions upto a maximum of Ksh 20,000 per month on employee’s contributions towards a pension scheme. This amount is not taxed at source. However, the same shall be taxed at retirement.<br>" +
+"Any contributions above Ksh 20,000 per month is taxed at source prior to remitting to a pension scheme hence not subject to further taxation at point of benefits payment<br>" +
+"1.	Unemployment Benefit :- Paid upon retrenchment - a sum equal to 3 Months member's contributory salary<br>" +
+"2.	Critical Illness Cover:- Paid upon diagnosed with critical illness disease- a sum equal to 30% of 3 years member's contributory salary<br>" +
+"3.	Permanent & Total Disability Benefit:- Paid upon declared permanently unable to discharge normal duties in employment- a sum equal to 3 years member's contributory salary<br>" +
+"4.	Last Expense:- Paid to beneficiaries upon member's death- Kenya Shillings 100,000<br>" +
+"5.	Group Life Benefit:- Paid to beneficiaries upon member's death- a sum equal to  3 years member's contributory salary<br>" +
+"<br>" +
+"It is also worth noting that LAPTRUST through CPF Financial Services administers benefits for deceased members through a Trust Fund where we hold and invest funds then pay school fees directly to various schools on behalf of the nominated beneficiaries."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="500" width="280" height="15" uuid="fb402975-83a2-4a52-9add-85e3f313465b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PART D:Additional Information]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="281" y="99" width="269" height="15" uuid="f07c7af0-3d69-4839-8b06-a3176bb48234">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
